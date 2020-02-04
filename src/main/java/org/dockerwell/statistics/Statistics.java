@@ -4,11 +4,17 @@ import java.util.List;
 import java.util.OptionalDouble;
 
 public class Statistics {
+	
 	public Double populationMean(List<Double> groupCharaceterstics) {
 		OptionalDouble mean = null;
 		if (!groupCharaceterstics.isEmpty()) {
 			mean = groupCharaceterstics.stream().mapToDouble(c -> c).average();
 		}
 		return mean.getAsDouble();
+	}
+	
+	public Double sampleMean(List<Double> sample) {
+		
+		return 0.0;
 	}
 }
